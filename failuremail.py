@@ -51,5 +51,11 @@ def etl():
         raise
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     
     etl()
+=======
+    import sys
+    if "pytest" not in sys.modules:
+        etl()
+>>>>>>> ee4d543

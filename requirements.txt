@@ -59,11 +59,7 @@ pathspec==0.12.1
 pendulum==2.1.2
 pluggy==1.6.0
 polars==1.31.0
-<<<<<<< HEAD
-prefect==2.18.1
-=======
 prefect==2.10.20
->>>>>>> ee4d543
 premailer==3.10.0
 psycopg2-binary==2.9.10
 pyasn1==0.6.1

@@ -1,0 +1,60 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-flow'
+###
+name: hourly-etl
+description: null
+version: 358bb4b432079c9b57845c9acdeb4715
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: my-pool
+tags: []
+parameters: 
+  file: "data1.csv"
+  output: "result.csv"
+schedule:
+  cron: 0 * * * *
+  timezone: Asia/Kolkata
+  day_or: true
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 3cbe0777-76f5-4512-9b32-da98177dcdd6
+  _block_document_name: anonymous-ec39f786-de35-429e-9fa2-9e7682166822
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: C:\PrefectProjects\myflows
+entrypoint: etlscript.py:etlpipeline
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    file:
+      title: file
+      position: 0
+      type: string
+    output:
+      title: output
+      position: 1
+      type: string
+  required:
+  - file
+  - output
+  definitions: null
+timestamp: '2025-07-31T06:23:41.755505+00:00'
+triggers: []
+enforce_parameter_schema: null

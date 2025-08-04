@@ -1,0 +1,5 @@
+name: hello-flow-deployment
+flow_name: hello-flow
+entrypoint: hello.py:hello_flow
+work_pool:
+  name: default-agent-pool

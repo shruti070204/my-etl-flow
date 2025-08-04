@@ -1,0 +1,48 @@
+###
+### A complete description of a Prefect Deployment for flow 'polling-etl-flow'
+###
+name: PollingETL
+description: null
+version: cbdeef6abab957de6d8d9644eda334bc
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: etl-pool
+tags: []
+parameters: {}
+schedule: 
+  type: interval
+  interval: 60.0
+  anchor_date: null
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: polling-etl-flow
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 85b51be0-9a59-4d44-821c-b8e0029f8084
+  _block_document_name: anonymous-f76e7488-97af-4faa-ba07-d47d8121295a
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: C:\PrefectProjects\myflows
+entrypoint: polling.py:polling_etl_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2025-08-01T05:34:21.763014+00:00'
+triggers: []
+enforce_parameter_schema: null

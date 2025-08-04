@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Python
         run: |
-          python polling.py
+          python etlscript.py
